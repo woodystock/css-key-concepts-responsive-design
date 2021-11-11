@@ -6,8 +6,20 @@
     --camel: #D8A47F;
 }
 
+html {
+    font-size: 100%;
+}
+
 body {
     background-color: var(--light);
+}
+
+.h1 {
+    font-size: 2.25rem;
+}
+
+.p {
+    font-size: 0.75rem;
 }
 
 .card {
@@ -15,8 +27,41 @@ body {
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.desktop-only {
+    visibility: hidden;
+}
+
+.species {
+    visibility: hidden;
+}
+
+.fav-foods {
+    visibility: hidden;
+}
+
+.birth-year {
+    visibility: hidden;
 }
 
 img {
     width: 250px;
+}
+
+@media only screen and (min-width: 700px) {
+    html {
+        font-size: 120%;
+    }
+
+    .desktop-only {
+        visibility: visible;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    html {
+        font-size: 140%;
+    }
 }
